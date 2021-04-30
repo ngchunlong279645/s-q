@@ -50,14 +50,14 @@ public class Stack {
 	         return stack[top];
 	}
 	
-	public void printBack() {
+	public void printStack() {
 		for(int i=0;i<=top;i++) {
 			System.out.print(stack[i]+" ");
 		}
 		System.out.println();
 	}
 	
-	public void printStack() {
+	public void printBack() {
 		for(int i=top;i>=0;i--) {
 			System.out.print(stack[i]+" ");
 		}

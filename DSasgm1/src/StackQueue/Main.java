@@ -11,24 +11,26 @@ public class Main {
 		int integer;
 		Scanner scan = new Scanner (System.in);
 		
-/*		System.out.println("Enter integers (999 to stop): ");
+		System.out.println("Enter integers (999 to stop): ");
 		do{
 			integer= scan.nextInt();
 			if(integer!=999)
 				s.push(integer);
 			else
 				break;
-		}while(integer!=999);  */
+		}while(integer!=999);  
 		
-		//s.printBack();
-		//s.printStack();
+		
+		s.printStack();
+		s.printBack();
+	}
 		//System.out.println(s.getSecond());
 		//System.out.println(s.countItems());
 		//s.removeItem(10);
 		//s.printBack();
 		//reverseStack();
 		
-		System.out.println("Enter integers");
+	/*	System.out.println("Enter integers");
 		do{
 			integer= scan.nextInt();
 			if(integer!=999)
@@ -38,7 +40,7 @@ public class Main {
 		}while(integer!=999);
 		q.printQueue();
 		reverseQueue();
-	}
+	} */
 
 	
 	public static void reverseStack() {
@@ -55,11 +57,6 @@ public class Main {
 		s.printStack();
 	}
 	
-	
-		
-		
-		
-		
 	
 	}//end
 
