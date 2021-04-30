@@ -34,15 +34,6 @@ public class Queue {
 		}	
 	}
 	
-/*	public String getFront()
-	{
-		String result = null;
-		if (isEmpty())
-			System.out.println("Queue is empty. Cannot retrieve data");
-		else
-			result = queue[frontIndex];
-		return result;
-	}*/
 	
 	public int dequeue()
 	{
@@ -52,7 +43,6 @@ public class Queue {
 		else
 		{
 			result = queue[frontIndex];
-			//queue[frontIndex]=null;
 			frontIndex = (frontIndex+1)%queue.length;
 			bilItem--;	
 		}

@@ -11,14 +11,14 @@ public class Main {
 		int integer;
 		Scanner scan = new Scanner (System.in);
 		
-		System.out.println("Enter integers (999 to stop): ");
+/*		System.out.println("Enter integers (999 to stop): ");
 		do{
 			integer= scan.nextInt();
 			if(integer!=999)
 				s.push(integer);
 			else
 				break;
-		}while(integer!=999);
+		}while(integer!=999);  */
 		
 		//s.printBack();
 		//s.printStack();
@@ -27,6 +27,15 @@ public class Main {
 		//s.removeItem(10);
 		//s.printBack();
 		//reverseStack();
+		
+		System.out.println("Enter integers");
+		do{
+			integer= scan.nextInt();
+			if(integer!=999)
+				q.enqueue(integer);
+			else
+				break;
+		}while(integer!=999);
 		q.printQueue();
 		reverseQueue();
 	}
@@ -43,7 +52,7 @@ public class Main {
 		while(!q.isEmpty()) {
 			s.push(q.dequeue());
 		}
-		q.printQueue();
+		s.printStack();
 	}
 	
 	
