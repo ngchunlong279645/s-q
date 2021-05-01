@@ -4,9 +4,9 @@ public class Queue {
 	private int frontIndex, backIndex, bilItem;
 	private int [] queue;
 		
-	public Queue()
+	public Queue(int size)
 	{
-		queue = new int[999];
+		queue = new int[size];
 		frontIndex = 0;
 		backIndex = -1;
 		bilItem=0;
@@ -50,16 +50,22 @@ public class Queue {
 	}
 	
 	public void printQueue() {
-		if(frontIndex <= backIndex) {	
+		if(isEmpty()) {	
+			System.out.println("Queue is empty. Cannot print data");
+		}
+		else if(frontIndex <= backIndex) {
 			for (int i= frontIndex; i<=backIndex ; i++) 
 				System.out.print(queue[i]+" ");
 		}
 		else {
-			for (int i= frontIndex; i>=backIndex ; i--) 
-				System.out.print(queue[i]+" ");
+			for (int i= frontIndex; i<queue.length ; i++) 
+				System.out.print(queue[i]+"\t");
+			for(int i=0;i<=backIndex;i++)
+				System.out.print(queue[i]+"\t");
 		}
 		System.out.println();
 	}
 	
-
+	
+	
 }

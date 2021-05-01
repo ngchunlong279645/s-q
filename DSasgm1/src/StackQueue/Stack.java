@@ -3,8 +3,14 @@ package StackQueue;
 import java.util.EmptyStackException;
 
 public class Stack {
-	int[] stack=new int[999];
-	int top=-1;
+	private int[] stack;
+	private int top;
+	 
+	
+	public Stack(int size) {
+		stack=new int[size];
+		top=-1;
+	}
 
 	public boolean isEmpty() {
 		if(top==-1)
@@ -64,8 +70,12 @@ public class Stack {
 		System.out.println();
 	}
 	
+	public int getTop() {
+		return stack[top];
+	}
+	
 	public int getSecond() {
-		return stack[1];
+		return stack[top-1];
 	}
 	
 	public int countItems() {
@@ -81,6 +91,7 @@ public class Stack {
 			}
 		}
 	}
+	
 	
 	
 }
